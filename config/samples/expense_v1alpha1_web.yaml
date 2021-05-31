@@ -1,0 +1,7 @@
+apiVersion: expense.majorov.biz/v1alpha1
+kind: Web
+metadata:
+  name: web-sample
+spec:
+  # Add fields here
+  foo: bar
