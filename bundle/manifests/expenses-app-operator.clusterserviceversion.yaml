@@ -1,0 +1,46 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+    operators.operatorframework.io/builder: operator-sdk-v1.6.1+git
+    operators.operatorframework.io/project_layout: go.kubebuilder.io/v3
+  name: expenses-app-operator.v0.0.1
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions: {}
+  description: Niko example expense operator
+  displayName: expense-app-operator
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: []
+    strategy: deployment
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - niko
+  - demo
+  - operator
+  links:
+  - name: Expenses App Operator
+    url: https://expenses-app-operator.domain
+  maintainers:
+  - email: nikolaj@majorov.biz
+    name: Nikolaj
+  maturity: alpha
+  provider:
+    name: Nikolaj Majorov
+    url: quay.io/nmajorov/expense-app-operator
+  version: 0.0.1

@@ -5,5 +5,15 @@ plugins:
   manifests.sdk.operatorframework.io/v2: {}
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: expenses-app-operator
-repo: github.com:nmajorov/expenses-app-operator.git
+repo: github.com/nmajorov/expenses-app-operator.git
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: majorov.biz
+  group: expense-app
+  kind: Web
+  path: github.com/nmajorov/expenses-app-operator.git/api/v1alpha1
+  version: v1alpha1
 version: "3"

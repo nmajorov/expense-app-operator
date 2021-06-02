@@ -3,6 +3,7 @@
 # It should be run by config/default
 resources:
 - bases/expense.majorov.biz_webs.yaml
+- bases/expense-app.majorov.biz_webs.yaml
 #+kubebuilder:scaffold:crdkustomizeresource
 
 patchesStrategicMerge:

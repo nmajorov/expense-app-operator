@@ -1,0 +1,50 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: expenses-app-operator.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: Web is the Schema for the webs API
+      displayName: Web
+      kind: Web
+      name: webs.expense-app.majorov.biz
+      version: v1alpha1
+  description: Niko example expense operator
+  displayName: expense-app-operator
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - niko
+  - demo
+  - operator
+  links:
+  - name: Expenses App Operator
+    url: https://expenses-app-operator.domain
+  maintainers:
+  - email: nikolaj@majorov.biz
+    name: Nikolaj
+  maturity: alpha
+  provider:
+    name: Nikolaj Majorov
+    url: quay.io/nmajorov/expense-app-operator
+  version: 0.0.0
