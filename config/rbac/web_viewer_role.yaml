@@ -5,7 +5,7 @@ metadata:
   name: web-viewer-role
 rules:
 - apiGroups:
-  - expense.majorov.biz
+  - expense-app.majorov.biz
   resources:
   - webs
   verbs:
@@ -13,7 +13,7 @@ rules:
   - list
   - watch
 - apiGroups:
-  - expense.majorov.biz
+  - expense-app.majorov.biz
   resources:
   - webs/status
   verbs:
