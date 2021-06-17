@@ -1,0 +1,6 @@
+apiVersion: expense-app.majorov.biz/v1alpha1
+kind: Database
+metadata:
+  name: database-sample
+spec:
+  databaseImage: "quay.io/centos7/postgresql-10-centos7:latest"

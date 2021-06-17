@@ -9,6 +9,32 @@ rules:
 - apiGroups:
   - expense-app.majorov.biz
   resources:
+  - databases
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - expense-app.majorov.biz
+  resources:
+  - databases/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - expense-app.majorov.biz
+  resources:
+  - databases/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - expense-app.majorov.biz
+  resources:
   - webs
   verbs:
   - create
